@@ -1,0 +1,34 @@
+package TheInternetAutomation;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class TestClass extends BaseClass
+{
+	AddRemoveElementPOM1 pom1;
+	contextmenuPOM2 pom2;
+	DragDropPOM3 pom3;
+	@BeforeClass
+	public void Toopenbrowser()
+	{
+		openbrowser();
+		pom1=new AddRemoveElementPOM1(driver);
+		pom2=new contextmenuPOM2(driver);
+		pom3=new DragDropPOM3(driver);
+	}
+	@BeforeMethod
+	public void Toperformactions() throws InterruptedException
+	{
+		pom1.pom1actions(driver);
+		pom2.pom2actions(driver);
+		pom3.pom3actions(driver);
+	}
+	
+	@Test
+	public void Totest()
+	{
+		
+	}
+
+}

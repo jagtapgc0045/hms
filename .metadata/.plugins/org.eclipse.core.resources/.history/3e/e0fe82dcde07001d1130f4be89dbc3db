@@ -1,0 +1,81 @@
+package Tradingview;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class POM1 
+{
+	@FindBy(xpath="//i[@data-field='Recommend.All']")private WebElement ratingsel1;
+	@FindBy(xpath="//i[@class='tv-screener-inplace-editor__selectbox-dropdown-toggle']")private WebElement ratingsel2;
+	@FindBy(xpath="(//span[@class='tv-control-checkbox__ripple js-ripple'])[211]")private WebElement ratingsel3;
+	@FindBy(xpath="//div[@class='tv-screener__standalone-title-wrap']")private WebElement ratingsel4;
+	@FindBy(xpath="//a[@class='tv-screener__symbol apply-common-tooltip']")private List<WebElement> daystocks;
+	@FindBy(xpath="//div[@data-name='screener-time-interval']")private WebElement daytoweek;
+	@FindBy(xpath="//div[@data-interval='1W']")private WebElement selectweek;
+	@FindBy(xpath="//a[@class='tv-screener__symbol apply-common-tooltip']")private List<WebElement> weekstocks;
+
+
+	//div[@data-interval='1W']
+	//div[@data-name='screener-time-interval']
+	//a[@class='tv-screener__symbol apply-common-tooltip']
+	//div[@class='tv-screener__standalone-title-wrap']
+	public POM1(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	public void pom1actions() throws InterruptedException
+	{
+		ratingsel1.click();
+		Thread.sleep(500);
+		ratingsel2.click();
+		Thread.sleep(500);
+		ratingsel3.click();
+		Thread.sleep(500);
+		Thread.sleep(500);
+		ratingsel4.click();
+		ArrayList<String>c=new ArrayList();
+
+		for(WebElement s1:daystocks) 
+		{
+			String a=s1.getText();
+			c.add(a);
+		}
+		System.out.println("======================================");
+		Thread.sleep(3000);
+
+		daytoweek.click();
+		selectweek.click();
+		Thread.sleep(500);
+		
+		ArrayList<String>d=new ArrayList();
+		 for(WebElement s2:weekstocks) 
+		{
+			String b=s2.getText();
+			d.add(b);
+			
+		}
+		Thread.sleep(500);
+		/*
+		for(int i=0;i<c.size();i++)
+		{
+			for(int j=0;j<d.size();j++)
+			{
+				if(c.get(i)==d.get(j))
+				{
+					System.out.println(c.get(i));
+				}
+			}
+		}
+		*/
+
+		
+	}
+	
+	
+}
