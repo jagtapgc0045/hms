@@ -5598,3 +5598,22 @@ org.eclipse.jgit.errors.TransportException: https://github.com/TesterGovind/June
 
 !ENTRY org.eclipse.egit.ui 4 0 2022-07-22 09:44:04.375
 !MESSAGE Can't connect to any repository: https://github.com/TesterGovind/June22.git (https://github.com/TesterGovind/June22.git: not authorized)
+
+!ENTRY org.eclipse.egit.ui 4 0 2022-07-22 09:45:11.391
+!MESSAGE Can't connect to any repository: 
+
+!ENTRY org.eclipse.egit.core 4 0 2022-07-22 09:46:48.162
+!MESSAGE An exception occurred during push on URI https://github.com/TesterGovind/June22.git: https://github.com/TesterGovind/June22.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/TesterGovind/June22.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:685)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:627)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:138)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1385)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:254)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:204)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.egit.ui 4 0 2022-07-22 09:50:32.324
+!MESSAGE Can't connect to any repository: 
