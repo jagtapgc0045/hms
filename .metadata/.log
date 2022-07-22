@@ -5646,3 +5646,6 @@ org.eclipse.jgit.errors.TransportException: https://github.com/TesterGovind/June
 
 !ENTRY org.eclipse.egit.ui 4 0 2022-07-22 10:16:36.395
 !MESSAGE Can't connect to any repository: 
+
+!ENTRY org.eclipse.egit.ui 4 0 2022-07-22 10:17:09.123
+!MESSAGE Can't connect to any repository: 
