@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\ashis\eclipse-workspace\CucumberFramework"/>
 			<item value="C:\Users\ashis\eclipse-workspace\Practice\src\TheInternetAutomation\TestClass.java"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,13 +27,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="MavenPractice.MavenPractice"/>
 		</list>
 		<list key="groupId">
-			<item value="MavenPractice"/>
 		</list>
 		<list key="artifactId">
-			<item value="MavenPractice"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -48,10 +46,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="ATTBDDCucumberBasics"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="ATTBDDCucumberBasics"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -68,5 +68,14 @@
 	<section name="org.eclipse.m2e.core.pom.overview">
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.preferences.RemoteArchetypeCatalogDialog">
+		<list key="catalogUrl">
+			<item value="https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml"/>
+			<item value="https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml"/>
+			<item value="http://repo1.maven.org/maven2/archetype-catalog.xml"/>
+		</list>
 	</section>
 </section>
