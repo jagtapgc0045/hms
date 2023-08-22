@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-20T12:59:16 IST" name="Default suite" finished-at="2023-08-20T12:59:20 IST" duration-ms="3872">
+    <groups>
+    </groups>
+    <test started-at="2023-08-20T12:59:16 IST" name="Default test" finished-at="2023-08-20T12:59:20 IST" duration-ms="3872">
+      <class name="com.spotify.test.CreateAndGetPlayListUsingReusableCalls">
+        <test-method signature="CreateSpotifyPlaylist()[pri:1, instance:com.spotify.test.CreateAndGetPlayListUsingReusableCalls@79924b]" started-at="2023-08-20T12:59:17 IST" name="CreateSpotifyPlaylist" finished-at="2023-08-20T12:59:20 IST" duration-ms="3485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateSpotifyPlaylist -->
+        <test-method signature="GetAllPlaylist()[pri:2, instance:com.spotify.test.CreateAndGetPlayListUsingReusableCalls@79924b]" started-at="2023-08-20T12:59:20 IST" name="GetAllPlaylist" finished-at="2023-08-20T12:59:20 IST" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllPlaylist -->
+      </class> <!-- com.spotify.test.CreateAndGetPlayListUsingReusableCalls -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

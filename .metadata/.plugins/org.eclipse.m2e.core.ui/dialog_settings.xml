@@ -46,11 +46,15 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="Spotify"/>
+			<item value="AmazonAssignment"/>
 			<item value="ATTBDDCucumberBasics"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Spotify"/>
+			<item value="AmazonAssignment"/>
 			<item value="ATTBDDCucumberBasics"/>
 		</list>
 		<list key="projectNameTemplate">

@@ -2,6 +2,7 @@ package basicrequest;
 
 import static io.restassured.RestAssured.given;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
@@ -12,13 +13,14 @@ import io.restassured.response.Response;
 public class swaggerPostReq {
 	
 	@Test
-	public String createUser()
+	public static String createUser()
 	{
+		String random=RandomStringUtils.randomAlphabetic(2);
 		RestAssured.baseURI="https://petstore.swagger.io/v2";
 		Response resp=given()
 		.body("{\r\n"
 				+ "  \"id\": 0,\r\n"
-				+ "  \"username\": \"userfive\",\r\n"
+				+ "  \"username\": \"userfive"+random+"\",\r\n"
 				+ "  \"firstName\": \"prashant\",\r\n"
 				+ "  \"lastName\": \"tambe\",\r\n"
 				+ "  \"email\": \"pt@gmail.com\",\r\n"
